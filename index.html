@@ -5,89 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCA - Portfolio</title>
-    <link rel="stylesheet" href="style2.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class='index'>
-    <!-- This is the nav bar section 1 -->
+<body>
     <div class='container'>
         <header>
-            <div class='num1'>
-                <p>
+            <div id='num1'>
+                <h3>
                     <01 />
-                </p>
-
+                </h3>
             </div>
-        </header>
-        <div>
             <nav>
-                <ul class='topnav'>
-                    <li><a href="index.html" class='ab'>About</a></li>
-                    <li><a href="./project.html" class='pt'>Portfolio</a></li>
-                    <li><a href="./contact.html" class="con">Contact Me</a></li>
+                <ul>
+                    <li class="current"><a href="index.html">About</a></li>
+                    <li><a href="./project.html">Portfolio</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
                 </ul>
             </nav>
-        </div>
-
-        <div class='main'>
-            <div class='page'>
-                <div class='avatar '>
-                    <img src="profile-pic3.jpg" alt="my-avatar" title="Chinenye">
-                </div>
-                <!-- This part contains info about me -->
-                <div class='bio'>
-                    <div class='desc'>
-                        <span class='unline'>I'm </span>
-                        <span> Chinenye</span>
-                    </div>
-                    <div class='words'>
-                        <p>An aspiring front-end developer based in Nigeria. I am very passionate about Tech.<br> In my short time of learning and coding experience, I have acquired some<br> beginner friendly skills necessary for building a website.
-                        </p>
-                    </div>
-                </div>
+        </header>
+        <br>
+        <div class='columns'>
+            <div class='col'>
+                <img src="profile-pic3.jpg" alt="my-avatar" title="Chinenye">
+                <h3><span class="unline">I'm</span> Chinenye</h3>
+                <p>An aspiring front-end developer based in Nigeria.<br> I am very passionate about Tech. In my short time of
+                    <br> learning and coding experience, I have acquired some<br> beginner friendly skills necessary for building a website.
+                </p>
             </div>
-            <!-- This part contains my skills -->
-            <div class='memo'>
+            <br>
+            <br>
+            <div class="col">
                 <div class='ski'>
                     <h3>Skills</h3>
                 </div>
-                <div class="main">
-                    <div class="h">
-                        <p class='bread'>HTML</p>
-                        <p class="jam">I am proficient at HTML.</p>
+                <div>
+                    <div class="box">
+                        <h3>HTML</h3>
+                        <p>I am proficient at HTML.</p>
                     </div>
-                    <div class="c">
-                        <p class='bread'>CSS</p>
-                        <p class="jam">I am practically improving my CSS skills.</p>
+                    <div class="box">
+                        <h3>CSS</h3>
+                        <p>I am practically improving my CSS skills.</p>
                     </div>
-                    <div class=" j ">
-                        <p class='bread'>JavaScript</p>
-                        <p class="jam">I am Still learning JavaScript.</p>
-                    </div>
-                </div>
-                <div class='main'>
-                    <div class="r">
-                        <p class='bread'>React </p>
-                        <p class="jam">I have an idea on react as a library.</p>
-                    </div>
-                    <div class=" v ">
-                        <p class='bread'>Vue</p>
-                        <p class="jam">I wish to learn Vue.</p>
-                    </div>
-                    <div class=" k ">
-                        <p class='bread'>Kotlin</p>
-                        <p class="jam "> I am interested in Android developer.</p>
+                    <div class="box">
+                        <h3>JavaScript</h3>
+                        <p>I am Still learning JavaScript.</p>
                     </div>
                 </div>
-            </div>
+                <div>
+                    <div class="box">
+                        <h3>React </h3>
+                        <p>I have an idea on react as a library.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Vue</h3>
+                        <p>I wish to learn Vue.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Kotlin</h3>
+                        <p> I am interested in Android developer.</p>
+                    </div>
+                </div>
 
+
+
+            </div>
         </div>
-    </div>
-    <div class='foot num1'>
-        <p>
-            @Naycodes
-        </p>
     </div>
 </body>
 
