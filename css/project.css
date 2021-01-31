@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700;900&display=swap');
+root {
+    font-size: 1em;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+    padding: 0;
+    margin: 0;
+    color: beige;
+    background-color: #202A44
+}
+
+
+/* GLOBAL */
+
+.container {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    margin-top: 3rem;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 20px 0 20px;
+    font-size: 16px;
+}
+
+header #num1 h4 {
+    margin: 0;
+    opacity: 0.3;
+}
+
+header .current a {
+    color: #e27c7c;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+
+/* PORTFOLIO  */
+
+.columns>.top-left {
+    display: flex;
+    margin: 2em 2em;
+}
+
+.columns>.down-right {
+    display: flex;
+    margin: 3em 2em 2em;
+}
+
+.top-left>div {
+    flex: 1;
+}
+
+.down-right>div {
+    flex: 1;
+}
+
+.top-left>div:first-of-type {
+    margin-right: 2em;
+}
+
+.down-right>div:first-of-type {
+    margin-left: 2em;
+}
+
+.down-right>div:first-of-type {
+    order: 1;
+}
+
+.columns img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5em;
+}
+
+.columns>hr {
+    margin-top: 1rem;
+    background-color: #e27c7c;
+    height: 2px;
+    border: none;
+}
+
+@media(max-width:768px) {
+    .columns>.top-left,
+    .columns>.down-right {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: none;
+    }
+    .down-right>div:first-of-type {
+        order: initial;
+    }
+    .columns>.down-right {
+        margin-top: 5em;
+    }
+    .columns img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: .5em;
+    }
+    img {
+        width: 100%;
+    }
+    .down-right>div {
+        flex: 1;
+    }
+    .columns>hr {
+        display: none;
+    }
+    .top-left>div:first-of-type {
+        width: 100%;
+        margin: auto;
+    }
+    .down-right>div:first-of-type {
+        width: 100%;
+        margin: auto;
+    }
+}

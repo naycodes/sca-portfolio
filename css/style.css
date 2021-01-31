@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700;900&display=swap');
+root {
+    font-size: 1em;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+    padding: 0;
+    margin: 0;
+    color: beige;
+    background-color: #202A44
+}
+
+
+/* GLOBAL */
+
+.container {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    margin-top: 3rem;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 20px 0 20px;
+    font-size: 16px;
+}
+
+header #num1 h4 {
+    margin: 0;
+    opacity: 0.3;
+}
+
+header .current a {
+    color: #e27c7c;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+
+/* COLUMNS  */
+
+.columns {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+
+/* COLUMN  COL1*/
+
+
+/* IMAGE */
+
+img {
+    display: block;
+    width: 50%;
+    margin: 3em auto 0;
+    border-radius: 70%;
+    box-shadow: 4px 8px 16px #3b3b3b;
+}
+
+h3 .unline {
+    border-bottom: .125rem solid #e27c7c;
+}
+
+.col:first-of-type>h3 {
+    text-align: center;
+}
+
+.col:first-of-type>p {
+    text-align: center;
+}
+
+
+/* COLUMN COL2 */
+
+.ski {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.col:last-of-type>div:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* BOXES  */
+
+.box {
+    flex: 1;
+    flex-basis: 100px;
+    border: .0625rem solid #e27c7c;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+/* IMAGE PUSH  */
+
+.col:first-of-type {
+    order: 1;
+}
+
+@media(max-width:768px) {
+    header li {
+        padding: 0 10px;
+    }
+    .columns {
+        flex-direction: column;
+    }
+    .col:first-of-type {
+        order: 0;
+    }
+    .ski {
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .col:last-of-type>div:last-of-type {
+        flex-direction: column;
+    }
+}
