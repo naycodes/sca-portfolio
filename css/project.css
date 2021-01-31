@@ -113,6 +113,9 @@ header a:hover {
 }
 
 @media(max-width:768px) {
+    header li {
+        padding: 0 10px;
+    }
     .columns>.top-left,
     .columns>.down-right {
         display: flex;
